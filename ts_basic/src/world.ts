@@ -7,7 +7,7 @@ export default class World {
   // 외부에서 호출할 수 있는 메소드 정의
   public sayHello(elem: HTMLElement | null) {
     if (elem) {
-      elem.innerText = this.message
+      elem.innerText = this.message;
     }
   }
 }
