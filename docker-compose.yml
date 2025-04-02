@@ -5,5 +5,5 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - ./ts_basic:/app
+      - ./:/app
     working_dir: /app
