@@ -27,5 +27,15 @@
   "dependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run lint-fix"
+    ]
   }
 }
