@@ -20,8 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        working-directory: api
+        working-directory: ts_basic
 
       - name: Run ESLint
         run: npm run lint-fix
+        working-directory: ts_basic
         
