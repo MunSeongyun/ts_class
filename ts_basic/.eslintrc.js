@@ -13,6 +13,7 @@ module.exports = {
   parser: '@typescript-eslint/parser', // TS 분석하는 parser를 지정
   parserOptions: {
     sourceType: 'module',
+    tsconfigRootDir: __dirname,
     project: './tsconfig.json', // 경로확인 필요
     // TS의 Lint 적용시에 참조하는 config 파일 지정
   },
