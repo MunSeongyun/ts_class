@@ -18,6 +18,8 @@ import objectSample from './object/object'
 import typeAliasSample from './object/alias'
 import arraySample from './array/array'
 import tupleSample from './array/tuple'
+import genericsSample from './generics/basic'
+import advancedSample from './generics/advanced'
 const root: HTMLElement | null = document.getElementById('root')
 const world = new World('Hello World!!!')
 world.sayHello(root)
@@ -47,5 +49,7 @@ world.sayHello(root)
 // console.log('add2', add2(1, 2, 3))
 // objectSample()
 // typeAliasSample()
-arraySample()
-tupleSample()
+// arraySample()
+// tupleSample()
+// genericsSample()
+advancedSample()
