@@ -20,6 +20,7 @@ import arraySample from './array/array'
 import tupleSample from './array/tuple'
 import genericsSample from './generics/basic'
 import advancedSample from './generics/advanced'
+import { poly } from './generics/polymorphism'
 const root: HTMLElement | null = document.getElementById('root')
 const world = new World('Hello World!!!')
 world.sayHello(root)
@@ -52,4 +53,5 @@ world.sayHello(root)
 // arraySample()
 // tupleSample()
 // genericsSample()
-advancedSample()
+// advancedSample()
+poly()
