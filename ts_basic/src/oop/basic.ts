@@ -128,13 +128,13 @@ export function oopTest() {
 
   console.log('hello:', Dict.hello())
 
-  const game = new Word('game',['게임','오락','유희'])
+  const game = new Word('game', ['게임', '오락', '유희'])
   dict.add(game)
   dict.all()
 
-  dict.updateDef('game','유희','놀이')
+  dict.updateDef('game', '유희', '놀이')
   dict.all()
 
-  dict.update('game','Game')
+  dict.update('game', 'Game')
   dict.all()
 }
