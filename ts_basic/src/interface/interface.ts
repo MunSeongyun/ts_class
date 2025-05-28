@@ -20,7 +20,7 @@ export default function interfacePractice() {
   }
 
   type Rice = {
-    calories: number
+    // calories: number
     gram: number
   }
 
@@ -33,15 +33,9 @@ export default function interfacePractice() {
     spicyLevel: 5,
   }
 
-  // optional field 추가
-  interface Bread {
-    brand?: string
-  }
-
   const baguette: Bread = {
     calories: 270,
     type: '바삭함',
-    brand: '파리바게트',
   }
 
   console.log('Baguette:', baguette)
@@ -53,4 +47,38 @@ export default function interfacePractice() {
   }
 
   console.log('Spicy Don:', spicyDon)
+  
+
+  interface Book {
+  page: number;
+  title: string;
+}
+
+interface Magazine extends Book {
+  cycle: 'daily' | 'weekly' | 'monthly' | 'yearly';
+}
+
+const jump: Magazine = {
+  cycle: 'weekly',
+  page: 300,
+  title: '소년점프',
+};
+
+console.log('Magazine:', jump);
+
+type BookType = {
+  page: number;
+  title: string;
+};
+
+interface HandBook extends BookType {
+  theme: string;
+}
+
+const goTrip: HandBook = {
+  page: 120,
+  theme: '여행',
+  title: 'GO Trip!',
+};
+console.log('HandBook:', goTrip);
 }
