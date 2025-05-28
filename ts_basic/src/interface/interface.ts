@@ -106,48 +106,47 @@ export default function interfacePractice() {
   console.log(demonSlayer.getPublishYear())
   console.log(attackOnTitan.getPublishYear())
 
-
-// User 추상 클래스 
+  // User 추상 클래스
   abstract class User {
-  constructor(protected firstName: string, protected lastName: string) {}
+    constructor(protected firstName: string, protected lastName: string) {}
 
-  abstract sayHi(name: string): string;
-  abstract fullName(): string;
-}
-
-// 추상 클래스 상속
-class Player extends User {
-  sayHi(name: string) {
-    return `hi ${name}. My name is ${this.fullName()}`;
+    abstract sayHi(name: string): string
+    abstract fullName(): string
   }
 
-  fullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
-}
+  // 추상 클래스 상속
+  class Player extends User {
+    sayHi(name: string) {
+      return `hi ${name}. My name is ${this.fullName()}`
+    }
 
-// User 인터페이스
-interface UserInterface {
-  sayHi(name: string): string;
-  fullName(): string;
-}
-
-// 인터페이스 구현 
-class PlayerInterface implements UserInterface {
-  constructor(private firstName: string, private lastName: string) {}
-
-  sayHi(name: string): string {
-    return `hi ${name}. My name is ${this.fullName()}`;
+    fullName() {
+      return `${this.firstName} ${this.lastName}`
+    }
   }
 
-  fullName(): string {
-    return `${this.firstName} ${this.lastName}`;
+  // User 인터페이스
+  interface UserInterface {
+    sayHi(name: string): string
+    fullName(): string
   }
-}
 
-const player1 = new Player('Minho', 'Kim');
-console.log(player1.sayHi('Jisoo')); 
+  // 인터페이스 구현
+  class PlayerInterface implements UserInterface {
+    constructor(private firstName: string, private lastName: string) {}
 
-const player2 = new PlayerInterface('Seongyun','Mun')
-console.log(player2.sayHi("Pack"));
+    sayHi(name: string): string {
+      return `hi ${name}. My name is ${this.fullName()}`
+    }
+
+    fullName(): string {
+      return `${this.firstName} ${this.lastName}`
+    }
+  }
+
+  const player1 = new Player('Minho', 'Kim')
+  console.log(player1.sayHi('Jisoo'))
+
+  const player2 = new PlayerInterface('Seongyun', 'Mun')
+  console.log(player2.sayHi('Pack'))
 }
