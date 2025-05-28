@@ -22,6 +22,7 @@ import genericsSample from './generics/basic'
 import advancedSample from './generics/advanced'
 import { poly } from './generics/polymorphism'
 import { oopTest } from './oop/basic'
+import interfacePractice from './interface/interface'
 const root: HTMLElement | null = document.getElementById('root')
 const world = new World('Hello World!!!')
 world.sayHello(root)
@@ -56,4 +57,5 @@ world.sayHello(root)
 // genericsSample()
 // advancedSample()
 // poly()
-oopTest()
+// oopTest()
+interfacePractice()
