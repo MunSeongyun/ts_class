@@ -23,6 +23,7 @@ import advancedSample from './generics/advanced'
 import { poly } from './generics/polymorphism'
 import { oopTest } from './oop/basic'
 import interfacePractice from './interface/interface'
+import localStorageAPI from './polymorphism/localstorage_api'
 const root: HTMLElement | null = document.getElementById('root')
 const world = new World('Hello World!!!')
 world.sayHello(root)
@@ -58,4 +59,5 @@ world.sayHello(root)
 // advancedSample()
 // poly()
 // oopTest()
-interfacePractice()
+// interfacePractice()
+localStorageAPI()
