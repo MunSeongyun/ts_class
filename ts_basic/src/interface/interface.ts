@@ -40,8 +40,8 @@ export default function interfacePractice() {
 
   const baguette: Bread = {
     calories: 270,
-    type: 'crusty',
-    brand: 'FrenchDelight',
+    type: '바삭함',
+    brand: '파리바게트',
   }
 
   console.log('Baguette:', baguette)
