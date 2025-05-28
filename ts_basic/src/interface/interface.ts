@@ -153,51 +153,44 @@ export default function interfacePractice() {
   console.log(player2.sayHi('Pack'))
 }
 
-
-
-
-
-
-
-
 // User 추상 클래스
 export abstract class User {
-    constructor(protected firstName: string, protected lastName: string) {}
+  constructor(protected firstName: string, protected lastName: string) {}
 
-    abstract sayHi(name: string): string
-    abstract fullName(): string
+  abstract sayHi(name: string): string
+  abstract fullName(): string
 }
 
 // 추상 클래스 상속
 export class Player extends User {
-    sayHi(name: string) {
-        return `hi ${name}. My name is ${this.fullName()}`
-    }
+  sayHi(name: string) {
+    return `hi ${name}. My name is ${this.fullName()}`
+  }
 
-    fullName() {
-        return `${this.firstName} ${this.lastName}`
-    }
+  fullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
 }
 
 // User 인터페이스
 export interface UserInterface {
-    firstName: string
-    lastName: string
-    sayHi(name: string): string
-    fullName(): string
+  firstName: string
+  lastName: string
+  sayHi(name: string): string
+  fullName(): string
 }
 
 // 인터페이스 구현
 export class PlayerInterface implements UserInterface {
-    constructor(public firstName: string, public lastName: string) {}
+  constructor(public firstName: string, public lastName: string) {}
 
-    sayHi(name: string): string {
-        return `hi ${name}. My name is ${this.fullName()}`
-    }
+  sayHi(name: string): string {
+    return `hi ${name}. My name is ${this.fullName()}`
+  }
 
-    fullName(): string {
-        return `${this.firstName} ${this.lastName}`
-    }
+  fullName(): string {
+    return `${this.firstName} ${this.lastName}`
+  }
 }
 
 const player1 = new Player('Minho', 'Kim')
