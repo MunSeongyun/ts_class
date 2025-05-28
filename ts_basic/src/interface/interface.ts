@@ -82,29 +82,27 @@ export default function interfacePractice() {
   console.log('HandBook:', goTrip)
 
   interface Book {
-    page: number;
-    title: string;
+    page: number
+    title: string
   }
 
-    class Comic implements Book {
-        // page: number;   
-        // title: string;  
+  class Comic implements Book {
+    // page: number;
+    // title: string;
 
-        constructor(public page: number, public title: string, private publishYear: string) {
-            // this.page = page;
-            // this.title = title;
-        }
-
-        getPublishYear() {
-            return this.title + '이/가 판매된 것은 ' + this.publishYear + '년입니다.';
-        }
+    constructor(public page: number, public title: string, private publishYear: string) {
+      // this.page = page;
+      // this.title = title;
     }
 
-    const demonSlayer = new Comic(200, '귀멸의 칼날', '2016');
-    const attackOnTitan = new Comic(250, '진격의 거인', '2013');
+    getPublishYear() {
+      return this.title + '이/가 판매된 것은 ' + this.publishYear + '년입니다.'
+    }
+  }
 
-    
-    console.log(demonSlayer.getPublishYear());
-    console.log(attackOnTitan.getPublishYear());
-    
+  const demonSlayer = new Comic(200, '귀멸의 칼날', '2016')
+  const attackOnTitan = new Comic(250, '진격의 거인', '2013')
+
+  console.log(demonSlayer.getPublishYear())
+  console.log(attackOnTitan.getPublishYear())
 }
