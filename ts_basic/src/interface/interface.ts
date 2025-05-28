@@ -44,7 +44,7 @@ export default function interfacePractice() {
     brand: 'FrenchDelight',
   }
 
-  console.log('🍞 Baguette:', baguette)
+  console.log('Baguette:', baguette)
 
   const spicyDon: MapoDon = {
     calories: 600,
@@ -52,5 +52,5 @@ export default function interfacePractice() {
     gram: 150,
   }
 
-  console.log('🍱 Spicy Don:', spicyDon)
+  console.log('Spicy Don:', spicyDon)
 }
