@@ -24,6 +24,9 @@ import { poly } from './generics/polymorphism'
 import { oopTest } from './oop/basic'
 import interfacePractice from './interface/interface'
 import localStorageAPI from './polymorphism/localstorage_api'
+import callbackSample from './asynchronous/callback'
+import promiseSample from './asynchronous/promise'
+import asyncAwaitSample from './asynchronous/asyncAwait'
 const root: HTMLElement | null = document.getElementById('root')
 const world = new World('Hello World!!!')
 world.sayHello(root)
@@ -60,4 +63,7 @@ world.sayHello(root)
 // poly()
 // oopTest()
 // interfacePractice()
-localStorageAPI()
+// localStorageAPI()
+// callbackSample()
+// promiseSample()
+asyncAwaitSample()
